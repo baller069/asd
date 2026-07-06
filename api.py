@@ -2,9 +2,13 @@ from flask import Flask, jsonify, request
 
 asd = Flask(__name__)
 
+@asd.route("/", methods=["GET"])
+def overs():
+    return {"asd": "ds"}
+
 @asd.route("/over", methods=["GET"])
 def burn():
-    return "test"
+    return {"test": "burn"}
 
 if __name__ == "__main__":
     asd.run(debug=True)
