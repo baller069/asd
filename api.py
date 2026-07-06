@@ -10,5 +10,7 @@ def overs():
 def burn():
     return {"test": "burn"}
 
+app = asd
+
 if __name__ == "__main__":
     asd.run(debug=True)
