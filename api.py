@@ -4,6 +4,8 @@ asd = Flask(__name__)
 
 @asd.route("/", methods=["GET"])
 def overs():
+    with open("database.txt", "w") as f:
+        f.write("burn west bengal")
     return {"asd": "ds"}
 
 @asd.route("/over", methods=["GET"])
